@@ -12,7 +12,7 @@ function AddEditBoardModal({ setIsBoardModalOpen, type , }) {
     { name: "Todo", tasks: [], id: uuidv4() },
     { name: "Doing", tasks: [], id: uuidv4() },
   ]);
-  const [isValid, setIsValid] = useState(true);
+  const [setIsValid] = useState(true);
   const board = useSelector((state) => state.boards).find(
     (board) => board.isActive
   );
@@ -119,6 +119,7 @@ function AddEditBoardModal({ setIsBoardModalOpen, type , }) {
                   onDelete(column.id);
                 }}
                 className=" m-4 cursor-pointer "
+                alt =""
               />
             </div>
           ))}

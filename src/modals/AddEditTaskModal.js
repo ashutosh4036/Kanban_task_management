@@ -14,7 +14,7 @@ function AddEditTaskModal({
 }) {
   const dispatch = useDispatch();
   const [isFirstLoad, setIsFirstLoad] = useState(true);
-  const [isValid, setIsValid] = useState(true);
+  const [setIsValid] = useState(true);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const board = useSelector((state) => state.boards).find(
@@ -180,6 +180,7 @@ function AddEditTaskModal({
                   onDelete(subtask.id);
                 }}
                 className=" m-4 cursor-pointer "
+                alt =""
               />
             </div>
           ))}

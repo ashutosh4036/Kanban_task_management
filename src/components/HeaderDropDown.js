@@ -51,7 +51,7 @@ function HeaderDropDown({ setOpenDropdown, setIsBoardModalOpen }) {
                 dispatch(boardsSlice.actions.setBoardActive({ index }));
               }}
             >
-              <img src={boardIcon} className="  filter-white  h-4 " />{" "}
+              <img src={boardIcon} className="  filter-white  h-4 " alt ="" />{" "}
               <p className=" text-lg font-bold  ">{board.name}</p>
             </div>
           ))}
@@ -62,7 +62,7 @@ function HeaderDropDown({ setOpenDropdown, setIsBoardModalOpen }) {
             setOpenDropdown(false)
           }}
           className=" flex items-baseline space-x-2  text-[#635fc7] px-5 py-4  ">
-            <img src={boardIcon} className="   filter-white  h-4 " />
+            <img src={boardIcon} className="   filter-white  h-4 "  alt =""/>
             <p className=" text-lg font-bold  ">Create New Board </p>
           </div>
 
