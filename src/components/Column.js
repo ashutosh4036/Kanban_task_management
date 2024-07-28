@@ -26,6 +26,7 @@ function Column({ colIndex }) {
   const col = board.columns.find((col, i) => i === colIndex);
   useEffect(() => {
     setColor(shuffle(colors).pop())
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dispatch]);
 
 
