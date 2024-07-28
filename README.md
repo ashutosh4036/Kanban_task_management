@@ -36,7 +36,7 @@ Bonus:
 
 ### Links
 
-- Live Site URL: [link]()
+- Live Site URL: [link](https://kanban-task-mangement.netlify.app/)
 
 ### Built with
 
